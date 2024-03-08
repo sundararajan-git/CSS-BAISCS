@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 50px;
+    font-weight: bolder;
+}
+.box{
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+}
+.box1{background-color: aqua;}
+.box2{background-color:chocolate;}
+.box3{background-color: cornflowerblue;}
+.box4{background-color: firebrick;}
+.box5{background-color: salmon;}
+.box6{background-color: greenyellow;}
+.box7{background-color:teal;}
+.box8{background-color:hotpink;}
+.box9{background-color:aquamarine;}
+.box10{background-color: violet;}
+
+/* ------------------------------------------ css flex box ---------------------------------- */ 
+/* flex box is not a frame work  or anything like that , it is new  box model  and no extra dependencies requird. */
+/*  flex box stands for flexible , adaptive  */
+
+/* ---------------------------------flex box is the alternative for---------------------------  */
+/* display : block */
+/* dispaly : inline */
+/* display : inline-block */
+
+/* -------------------------Advantages of the flex box--------------------------------------------- */
+/* easy to align element in vertical centering */
+/* flex box can have display order reversed  or rearranged at the style layer */
+/* one of the main advantages of felx box is the ability to fill extra space without the need to use jsvascript  */
+
+/* -------------------The flex container properties are   --------------------------- */
+/* 
+    1.flex-direction
+    2.flex-wrap
+    3.flex-flow
+    4.justify-content
+    5.align-items
+    6.align-content
+ */
+
+.container{
+    display: flex;
+    /* -----------------------------------flex direction-------------------------- */
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; /
+
+    /* ------------------------------------- flex warp -------------------------- */
+    /* width: 300px; */
+    flex-wrap:  nowrap;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* --------------------------------flex flow --------------------------------- */
+    /* --------------- flex flow  = flex direction + flex wrap */
+    flex-flow: row nowrap;
+
+    /* width: 300px; */
+    /* flex-flow:row wrap; */
+    /* flex-flow: wrap-reverse; */
+
+    /* height: 300px; */
+
+    /* flex-flow: column wrap; */
+    /* flex-flow: wrap-reverse column; */
+
+    /* ----------------------------justify contente (main axis - X)-------------------------------------- */
+    justify-content:flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: left; */
+    /* justify-content: right; */
+    /* justify-content: baseline */
+
+    /* ----------------------------------- align content (main axis - Y) ----------------------------------------- */
+    /* height: 300px; */
+    /* width: 300px; */
+    /* flex-flow: wrap; */
+    align-content: stretch;
+    
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* align-content: baseline; */
+
+    /* ----------------------------------------align items --------------------------------------- */
+    /* -------------------------align items =  */
+    /* height: 300px; */
+    align-items: stretch;
+
+    /* align-items:flex-start; */
+    /* align-items:flex-end; */
+    /* align-items:center; */
+    /* align-items:baseline; */
+    /* align-items: self-end; */
+    /* align-items: self-start; */
+ }
+
+
+ /*-----------------------------The flex item properties are:-----------------------------------  */
+ /* 
+    1.order
+    2.flex-grow
+    3.flex-shrink
+    4.flex-basis
+    5.flex
+    6.align-self
+ */
+
+ /* -------------------------------------order------------------------------------ */
+/* .box1{order: 10;} */
+/* .box2{order: 9;} */
+/* .box3{order: 8;} */
+/* .box4{order: 7;} */
+/* .box5{order: 6;} */
+/* .box6{order: 5;} */
+/* .box7{order: 4;} */
+/* .box8{order: 3;} */
+/* .box9{order: 2;} */
+/* .box10{order:1;} */
+
+/* ------------------------flex gorw----------------------------------------------- */
+
+/* .box1{flex-grow: 2;}
+.box2{flex-grow: 1;}
+.box5{flex-grow: 4;} */
+
+/*--------------------------------- flex shirnk----------------------------------------  */
+
+/* .container{width: 700px;}
+.box{width: 50px;}
+.box3{flex-shrink: 2;}
+.box7{flex-shrink: 3;} */
+
+/* ---------------------------------align self--------------------------------------------- */
+/* .container{width: 300px;height: 300px; flex-flow: wrap;}
+
+.box1{align-self: flex-end;}
+.box7{align-self: flex-start;}
+.box9{align-self: center;}
+.box3{align-self: baseline;}
+.box5{align-self: last baseline;} */
+
+/* --------------------------flex basics ------------------------------------------- */
+
+/* .box1{flex-basis: 200px;} */
+/* .box7{flex-basis: 300px} */
+
+/* -----------------------------------flex -------------------------------------- */
+/* flex = flex grow  + flex shirnk + flex basics */
+/* .box1{flex: 0 3 100px;}
+.box5{flex: 1 0 5px;} */

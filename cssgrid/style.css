@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.box {
+  height: 30px;
+}
+.box1 {
+  background-color: aqua;
+}
+.box2 {
+  background-color: chocolate;
+}
+.box3 {
+  background-color: cornflowerblue;
+}
+.box4 {
+  background-color: firebrick;
+}
+.box5 {
+  background-color: salmon;
+}
+.box6 {
+  background-color: greenyellow;
+}
+.box7 {
+  background-color: teal;
+}
+.box8 {
+  background-color: hotpink;
+}
+.box9 {
+  background-color: aquamarine;
+}
+.box10 {
+  background-color: violet;
+}
+
+/* ------------------------------------------ css grid ---------------------------------- */
+
+/*
+  CSS GRID CONTAINER PROPERTIES
+
+  1.display
+  2.grid-template-columns
+  3.grid-template-rows
+  4.grid-template
+  5.column-gap
+  6.row-gap
+  7.justify-items
+  8.align-items
+  9.place-items
+  10.justify-content
+  11.align-content
+  12.place-content
+  13.grid-auto-columns
+  14.grid-auto-rows
+  15.gris-auto-flow
+
+*/
+
+/* ------------------------------------  CSS GRID CONTAINER PROPERTIES--------------------------*/
+
+.container {
+  display: grid;
+  /* display: inline-grid; */
+
+  /*---------- grid template columns-----------------*/
+  /* grid-template-columns: 100px 100px 200px; */
+  /* grid-template-columns: repeat(3,200px); */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* grid-template-columns: repeat(3,50px)200px; */
+  /* grid-template-columns: repeat(3,minmax(100px,1fr)); */
+
+  /* ------------------grid tempalte rows------------- */
+  height: 400px;
+  /* grid-template-rows: 100px 50px 100px; */
+  /* grid-template-rows: repeat(2,100px); */
+  /* grid-template-rows: repeat(100px); */
+  /* grid-template-rows: 1fr 2fr 1fr; */
+
+  /* ---------------gird template = column + rows----------------*/
+  /* grid-template: repeat(2,300px)/ repeat(3,200px); */
+  /* grid-template: repeat(1,100px)/ repeat(3,200px); */
+
+  /* -----------------------------gap---------------------------- */
+  /* grid-template: repeat(1,100px)/repeat(3,200px); */
+  /* column-gap: 100px; */
+  /* row-gap: 20px; */
+  /* gap:20px; */
+
+  /* --------------------------justifiy content [horizintal line] ---------------*/
+  /* justify-items: stretch; */
+  /* justify-items: flex-start; */
+  /* justify-items: flex-end; */
+  /* justify-items: center; */
+
+  /* ------------------------ align content  [vertical linne] ----------------*/
+  /* height: 600px; */
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+
+  /* -----------------------place content = vertical + horizontal ------------------------ */
+  /* place-content: start; */
+  /* place-content: end; */
+  /* place-content: center; */
+  /* place-content: start center; */
+  /* place-content: end center; */
+  /* place-content: center end; */
+  /* place-content: center start; */
+
+  /* -----------------------grid - auto -flow---------------------------------------- */
+  /* grid-auto-flow: row; */
+  /* grid-auto-rows: 80px; */
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: 20px; */
+}
+
+/*
+ CCS ITEM PROPERTIES
+
+1.grid-column-start
+2.grid-colun-end
+3.grid-column
+4.grid-row-start
+5.grid-row-end
+6.grid-row
+7.justify-self
+8.align-self
+9.place-self
+
+*/
+
+/*-------------------------grid column-------------------------  */
+.box1 {
+  /* grid-column-start:1; */
+  /* grid-column-end: 4; */
+  /* grid-column-end: span 3; */
+  /* grid-column: span 3; */
+  /* grid-column: 1 / span 3; */
+}
+
+/* ------------------grid row------------------------------ */
+.box2 {
+  /* grid-row-start: 2; */
+  /* grid-row-end: 4; */
+  /* grid-row: span 2; */
+  /* grid-row: 2 /span 2; */
+}
+
+/*----------------justfiy-self + align-self = place-self ---------------------*/
+.box4 {
+  justify-self: stretch;
+  /* justify-self: start; */
+  /* justify-self: center; */
+  /* justify-self: end; */
+}
+
+.box4 {
+  align-self: stretch;
+  /* align-self: start; */
+  /* align-self: end; */
+  /* align-self: center; */
+}
+/*--------------------------------vertical horizontal-----------------------------*/
+.box4 {
+  /* place-self: start end; */
+  /* place-self: start center; */
+  /* place-self: start end; */
+  /* place-self: end center; */
+  /* place-self: center; */
+}
